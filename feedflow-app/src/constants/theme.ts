@@ -110,4 +110,5 @@ export const TOPICS_AVOID = [
   { id: 'celebrities', label: 'Celebrity News', emoji: '⭐' },
 ];
 
-export const API_URL = 'https://feedflow-backend.onrender.com';
+export const API_URL ="https://feedflow-complete.onrender.com";
+// export const API_URL = 'http://192.168.1.40:3000';

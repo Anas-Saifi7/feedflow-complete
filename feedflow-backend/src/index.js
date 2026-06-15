@@ -22,7 +22,7 @@ const limiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 100 });
 app.use(limiter);
 
 // DB Connection
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/feedflow';
+const MONGO_URI = process.env.MONGO_URI ;
 mongoose.connect(MONGO_URI)
   .then(() => console.log('✅ MongoDB connected'))
   .catch((err) => console.log('⚠️  MongoDB error (using in-memory):', err.message));
